@@ -18,6 +18,7 @@ def get_apod_images(api_key):
     count = 30
     payload = {"count": count, "api_key": api_key}
     response = requests.get(url, params=payload)
+    response.raise_for_status()
     for appod_images in response.json():
         if appod_images.get("media_type") == "image":
             nassa_link_image = appod_images["hdurl"] or appod_images["url"]
