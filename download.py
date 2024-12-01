@@ -3,10 +3,7 @@ import os
 
 
 def download(filename, url):
-    try:
-        os.makedirs("images")
-    except FileExistsError:
-        pass
+    os.makedirs("images", exist_ok=True)
     response = requests.get(url)
     response.raise_for_status()
 
