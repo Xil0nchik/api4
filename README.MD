@@ -50,10 +50,10 @@ main.ру и запишите туда данные в таком формате
 
 ```
 NASA_TOKEN = "nasa-token"
-BOT_TOKEN = "bot_token"
+TG_BOT_TOKEN = "tg_bot_token"
 TG_CHAT_ID = "chat_id"
 ```
-Получить токен `NASA_TOKEN` можно на сайте [NASA](https://api.nasa.gov/).Получить токен `BOT_TOKEN` 
+Получить токен `NASA_TOKEN` можно на сайте [NASA](https://api.nasa.gov/).Получить токен `TG_BOT_TOKEN` 
 можно в боте BotFather.В описании канала получите название и положите переменную `TG_CHAT_ID`.
 
 ### Цель проекта
