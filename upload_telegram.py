@@ -20,7 +20,7 @@ def send_images(chat_id, bot_token):
 def main():
     load_dotenv()
     chat_id = os.environ["TG_CHAT_ID"]
-    bot_token = os.environ["BOT_TOKEN"]
+    bot_token = os.environ["TG_BOT_TOKEN"]
     send_images(chat_id, bot_token)
 
 
