@@ -10,6 +10,7 @@ def get_epic_images(api_key):
     count = 30
     payload = {"count": count, "api_key": api_key}
     response = requests.get(url, params=payload)
+    response.raise_for_status()
     for epic_images in response.json():
         epic_name = epic_images["image"]
         epic_date = epic_images["date"]
